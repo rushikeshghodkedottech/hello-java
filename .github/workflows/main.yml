@@ -6,6 +6,9 @@ on:
   push:
     branches: [main, feat/*]
 
+  schedule:
+    - cron: '0 15 * * 1'
+
 jobs:
   java-maven:
     runs-on: ubuntu-latest
